@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de privacidad — YappyVoz</title>
   <meta name="description" content="Política de privacidad de YappyVoz: qué datos usa, con qué permisos, dónde se guardan y cómo revocar el acceso.">
+  <link rel="alternate" hreflang="es" href="https://voz.gestorpro.us/privacidad/">
+  <link rel="alternate" hreflang="zh" href="https://voz.gestorpro.us/privacidad/zh/">
+  <link rel="alternate" hreflang="en" href="https://voz.gestorpro.us/privacidad/en/">
   <style>
     :root { color-scheme: light; }
     body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #1c1c1c; background: #fafafa; line-height: 1.55; }
     main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
     h1 { font-size: 1.8rem; margin: 0 0 4px; }
     h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+    .idiomas { margin: 0 0 20px; font-size: 0.95rem; }
+    .idiomas strong { color: #1c1c1c; }
     .fecha { color: #666; margin: 0 0 24px; }
     .aviso { background: #fff4e5; border-left: 4px solid #e6a23c; padding: 12px 16px; border-radius: 4px; margin: 24px 0; }
     ul { padding-left: 22px; }
@@ -20,29 +25,36 @@
 </head>
 <body>
 <main>
+  <p class="idiomas"><strong>Español</strong> · <a href="zh/" lang="zh" hreflang="zh">中文</a> · <a href="en/" lang="en" hreflang="en">English</a></p>
   <h1>Política de privacidad — YappyVoz</h1>
-  <p class="fecha">Última actualización: 7 de noviembre de 2026</p>
+  <p class="fecha">Última actualización: 10 de noviembre de 2026</p>
 
   <p>YappyVoz es una herramienta de uso interno que lee, con permiso de solo lectura, los correos de notificación de Yappy
-    (<code>notificaciones@yappy.com.pa</code>) en la cuenta de Gmail autorizada, únicamente para anunciar por voz el monto recibido.
-    No almacena el contenido de los correos, no accede a otros mensajes, no comparte datos con terceros y no está afiliada a Yappy ni a
-    Banco General. El acceso puede revocarse en cualquier momento desde
+    (<code>notificaciones@yappy.com.pa</code>) en la cuenta de Gmail autorizada, para anunciar por voz el monto recibido y llevar
+    un registro de los pagos recibidos. Los pagos recibidos se guardan solo en este equipo (fecha, monto, nombre abreviado,
+    confirmación); no se envían a ningún servidor. No accede a otros mensajes, no comparte datos con terceros y no está afiliada a
+    Yappy ni a Banco General. El acceso puede revocarse en cualquier momento desde
     <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
 
   <h2>Qué datos usa</h2>
   <ul>
     <li><strong>Correos de notificación de pago</strong> (solo los del remitente <code>notificaciones@yappy.com.pa</code> con asunto de pago recibido),
       leídos con el permiso <code>gmail.readonly</code> de Google. De cada correo se usan las cabeceras de autenticación
-      (para comprobar que es auténtico) y el monto del pago.</li>
-    <li><strong>Notificaciones del teléfono</strong> (solo en la aplicación Android): la notificación de pago recibido, para anunciar el monto.</li>
+      (para comprobar que es auténtico), el monto, la fecha y hora, el nombre abreviado de quien paga (por ejemplo «Rodrigo G.»)
+      y el código de confirmación.</li>
+    <li><strong>Notificaciones del teléfono</strong> (solo en la aplicación Android): el aviso de que llegó un correo, para consultar Gmail en ese momento.</li>
   </ul>
 
   <h2>Qué guarda y dónde</h2>
   <ul>
     <li>Todo el procesamiento ocurre <strong>en tu propio dispositivo o computadora</strong>. YappyVoz no tiene servidores propios y no envía tus datos a ningún sitio.</li>
-    <li>Guarda localmente la credencial de acceso que Google emite al autorizar, los identificadores de los correos ya anunciados
-      (para no repetirlos) y un registro técnico con fecha, hora y monto de cada anuncio. El registro no incluye nombres ni teléfonos de quien paga.</li>
-    <li>No guarda el texto de los correos ni de las notificaciones.</li>
+    <li><strong>Registro de pagos recibidos:</strong> los pagos recibidos se guardan solo en este equipo (fecha, monto, nombre abreviado,
+      confirmación); no se envían a ningún servidor. Sirve para consultar los pagos del día, de la semana o del mes y exportarlos a un archivo
+      CSV o Excel que tú eliges dónde guardar. <strong>No se guarda el número de teléfono</strong> de quien paga ni el mensaje del pago.</li>
+    <li>Guarda también, en el mismo equipo, la credencial de acceso que Google emite al autorizar, los identificadores de los correos ya
+      anunciados (para no repetirlos), tus ajustes (idioma, voz) y un registro técnico con fecha, hora y monto de cada anuncio, sin nombres ni teléfonos.</li>
+    <li>Si activas el PIN de la página de pagos, se guarda solo una huella cifrada (hash) del PIN, nunca el PIN.</li>
+    <li>No guarda el texto completo de los correos ni de las notificaciones.</li>
   </ul>
 
   <h2>Qué no hace</h2>
@@ -56,14 +68,15 @@
   <h2>Datos de Google (uso limitado)</h2>
   <p>El uso que YappyVoz hace de la información recibida de las API de Google se ajusta a la
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>,
-    incluidos los requisitos de uso limitado: los datos de Gmail se emplean únicamente para anunciar por voz los pagos recibidos,
-    no se transfieren a terceros salvo que sea necesario para esa función o lo exija la ley, no se usan para publicidad
-    y ninguna persona los lee, salvo con tu consentimiento explícito, por motivos de seguridad o para cumplir la ley.</p>
+    incluidos los requisitos de uso limitado: los datos de Gmail se emplean únicamente para anunciar por voz los pagos recibidos
+    y mostrarte su registro en tu propio equipo, no se transfieren a terceros salvo que sea necesario para esa función o lo exija la ley,
+    no se usan para publicidad y ninguna persona los lee, salvo con tu consentimiento explícito, por motivos de seguridad o para cumplir la ley.</p>
 
   <h2>Cómo revocar el acceso y borrar los datos</h2>
   <ul>
     <li>Retira el permiso de Gmail en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (entrada «YappyVoz»).</li>
-    <li>Desinstala la aplicación (Android) o el programa (Windows); al desinstalar se eliminan la credencial y los registros locales.</li>
+    <li>Desinstala la aplicación (Android) o el programa (Windows); al desinstalar se eliminan la credencial, el registro de pagos y los registros locales.
+      Los archivos CSV o Excel que hayas exportado son tuyos y quedan donde los guardaste.</li>
   </ul>
 
   <div class="aviso">
@@ -74,7 +87,7 @@
   <h2>Contacto</h2>
   <p>Para cualquier consulta sobre esta política: <a href="mailto:jimaisolutions@gmail.com">jimaisolutions@gmail.com</a>.</p>
 
-  <footer><a href="../">YappyVoz</a> · Política de privacidad</footer>
+  <footer><a href="../">YappyVoz</a> · Política de privacidad · <a href="zh/" lang="zh">中文</a> · <a href="en/" lang="en">English</a></footer>
 </main>
 </body>
 </html>

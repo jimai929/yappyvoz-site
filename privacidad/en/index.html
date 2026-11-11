@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — YappyVoz</title>
+  <meta name="description" content="YappyVoz privacy policy: what data it uses, with which permissions, where it is stored and how to revoke access.">
+  <link rel="alternate" hreflang="es" href="https://voz.gestorpro.us/privacidad/">
+  <link rel="alternate" hreflang="zh" href="https://voz.gestorpro.us/privacidad/zh/">
+  <link rel="alternate" hreflang="en" href="https://voz.gestorpro.us/privacidad/en/">
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #1c1c1c; background: #fafafa; line-height: 1.55; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+    .idiomas { margin: 0 0 20px; font-size: 0.95rem; }
+    .idiomas strong { color: #1c1c1c; }
+    .fecha { color: #666; margin: 0 0 24px; }
+    .aviso { background: #fff4e5; border-left: 4px solid #e6a23c; padding: 12px 16px; border-radius: 4px; margin: 24px 0; }
+    ul { padding-left: 22px; }
+    footer { margin-top: 48px; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; padding-top: 16px; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="idiomas"><a href="../" lang="es" hreflang="es">Español</a> · <a href="../zh/" lang="zh" hreflang="zh">中文</a> · <strong>English</strong></p>
+  <h1>Privacy policy — YappyVoz</h1>
+  <p class="fecha">Last updated: November 10, 2026</p>
+
+  <p>YappyVoz is an internal-use tool that reads, with read-only permission, the Yappy notification emails
+    (<code>notificaciones@yappy.com.pa</code>) in the authorized Gmail account, in order to announce the received amount by voice and
+    keep a record of the payments received. Received payments are stored only on this device (date, amount, abbreviated name,
+    confirmation); they are not sent to any server. It does not access other messages, does not share data with third parties and
+    is not affiliated with Yappy or Banco General. Access can be revoked at any time from
+    <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+
+  <h2>What data it uses</h2>
+  <ul>
+    <li><strong>Payment notification emails</strong> (only those from the sender <code>notificaciones@yappy.com.pa</code> with a payment-received subject),
+      read with Google's <code>gmail.readonly</code> permission. From each email it uses the authentication headers
+      (to check that it is genuine), the amount, the date and time, the abbreviated name of the payer (for example “Rodrigo G.”)
+      and the confirmation code.</li>
+    <li><strong>Phone notifications</strong> (Android app only): the notice that an email arrived, in order to query Gmail at that moment.</li>
+  </ul>
+
+  <h2>What it stores and where</h2>
+  <ul>
+    <li>All processing happens <strong>on your own device or computer</strong>. YappyVoz has no servers of its own and does not send your data anywhere.</li>
+    <li><strong>Record of received payments:</strong> received payments are stored only on this device (date, amount, abbreviated name,
+      confirmation); they are not sent to any server. It lets you look up the payments of the day, week or month and export them to a CSV
+      or Excel file that you choose where to save. <strong>The payer's phone number is not stored</strong>, nor is the payment message.</li>
+    <li>It also stores, on the same device, the access credential Google issues when you authorize, the identifiers of the emails already
+      announced (so they are not repeated), your settings (language, voice) and a technical log with the date, time and amount of each
+      announcement, without names or phone numbers.</li>
+    <li>If you turn on the PIN for the payments page, only a cryptographic hash of the PIN is stored, never the PIN itself.</li>
+    <li>It does not store the full text of the emails or notifications.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not send, delete, move or modify emails.</li>
+    <li>It does not read emails from other senders or other folders.</li>
+    <li>It does not share, sell or transfer data to third parties, or use it for advertising.</li>
+    <li>It does not move money or access bank accounts.</li>
+  </ul>
+
+  <h2>Google data (limited use)</h2>
+  <p>YappyVoz's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements: Gmail data is used only to announce received payments by voice and to show you their record
+    on your own device, is not transferred to third parties unless necessary for that function or required by law, is not used for
+    advertising, and no human reads it except with your explicit consent, for security reasons or to comply with the law.</p>
+
+  <h2>How to revoke access and delete the data</h2>
+  <ul>
+    <li>Remove the Gmail permission at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (entry “YappyVoz”).</li>
+    <li>Uninstall the app (Android) or the program (Windows); uninstalling removes the credential, the record of payments and the local logs.
+      Any CSV or Excel files you exported are yours and stay where you saved them.</li>
+  </ul>
+
+  <div class="aviso">
+    YappyVoz is an independent development. <strong>It is not affiliated with Yappy or Banco General</strong>, nor endorsed by them.
+    Yappy and Banco General are trademarks of their respective owners.
+  </div>
+
+  <h2>Contact</h2>
+  <p>For any question about this policy: <a href="mailto:jimaisolutions@gmail.com">jimaisolutions@gmail.com</a>.</p>
+
+  <footer><a href="../../">YappyVoz</a> · Privacy policy · <a href="../" lang="es">Español</a> · <a href="../zh/" lang="zh">中文</a></footer>
+</main>
+</body>
+</html>

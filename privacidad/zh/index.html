@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 — YappyVoz</title>
+  <meta name="description" content="YappyVoz 隐私政策：使用哪些数据、用什么权限、保存在哪里，以及如何撤销授权。">
+  <link rel="alternate" hreflang="es" href="https://voz.gestorpro.us/privacidad/">
+  <link rel="alternate" hreflang="zh" href="https://voz.gestorpro.us/privacidad/zh/">
+  <link rel="alternate" hreflang="en" href="https://voz.gestorpro.us/privacidad/en/">
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Microsoft YaHei", "PingFang SC", sans-serif; color: #1c1c1c; background: #fafafa; line-height: 1.7; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+    .idiomas { margin: 0 0 20px; font-size: 0.95rem; }
+    .idiomas strong { color: #1c1c1c; }
+    .fecha { color: #666; margin: 0 0 24px; }
+    .aviso { background: #fff4e5; border-left: 4px solid #e6a23c; padding: 12px 16px; border-radius: 4px; margin: 24px 0; }
+    ul { padding-left: 22px; }
+    footer { margin-top: 48px; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; padding-top: 16px; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="idiomas"><a href="../" lang="es" hreflang="es">Español</a> · <strong>中文</strong> · <a href="../en/" lang="en" hreflang="en">English</a></p>
+  <h1>隐私政策 — YappyVoz</h1>
+  <p class="fecha">最后更新：2026 年 11 月 10 日</p>
+
+  <p>YappyVoz 是一款内部使用的工具。它以只读权限读取已授权 Gmail 账号里的 Yappy 通知邮件
+    （<code>notificaciones@yappy.com.pa</code>），用来语音播报收到的金额，并保存一份收款记录。
+    收款记录只保存在本机（日期、金额、付款人简称、确认码），不会发送到任何服务器。
+    它不读取其他邮件，不向第三方分享数据，与 Yappy 和 Banco General 没有任何关联。
+    您可以随时在 <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a> 撤销授权。</p>
+
+  <h2>使用哪些数据</h2>
+  <ul>
+    <li><strong>收款通知邮件</strong>（仅限发件人 <code>notificaciones@yappy.com.pa</code>、主题为收到付款的邮件），
+      通过 Google 的 <code>gmail.readonly</code> 权限读取。每封邮件只使用：认证邮件头（用来确认邮件是真的）、金额、日期和时间、
+      付款人的简称（例如“Rodrigo G.”）以及确认码。</li>
+    <li><strong>手机通知</strong>（仅 Android 应用）：收到新邮件的通知，用来在那一刻去查询 Gmail。</li>
+  </ul>
+
+  <h2>保存什么、保存在哪里</h2>
+  <ul>
+    <li>所有处理都在<strong>您自己的手机或电脑上</strong>完成。YappyVoz 没有自己的服务器，不会把您的数据发送到任何地方。</li>
+    <li><strong>收款记录：</strong>收款记录只保存在本机（日期、金额、付款人简称、确认码），不会发送到任何服务器。
+      它用来查询当天、本周或本月的收款，并可以导出为 CSV 或 Excel 文件，保存位置由您选择。
+      <strong>不保存付款人的手机号</strong>，也不保存付款留言。</li>
+    <li>同样只保存在本机的还有：授权时 Google 发放的访问凭据、已播报邮件的编号（避免重复播报）、您的设置（语言、语音），
+      以及一份技术日志（每次播报的日期、时间和金额，不含姓名和手机号）。</li>
+    <li>如果您为收款记录页开启了 PIN，只保存 PIN 的加密摘要（哈希），不保存 PIN 本身。</li>
+    <li>不保存邮件和通知的完整内容。</li>
+  </ul>
+
+  <h2>不会做的事</h2>
+  <ul>
+    <li>不发送、删除、移动或修改邮件。</li>
+    <li>不读取其他发件人的邮件，也不读取其他文件夹。</li>
+    <li>不向第三方分享、出售或转移数据，也不用于广告。</li>
+    <li>不转移资金，不访问银行账户。</li>
+  </ul>
+
+  <h2>Google 数据（有限使用）</h2>
+  <p>YappyVoz 对从 Google API 获得的信息的使用遵守
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，
+    包括其中的“有限使用”要求：Gmail 数据仅用于语音播报收到的付款，以及在您自己的设备上向您显示收款记录；
+    除非该功能必需或法律要求，否则不会转移给第三方；不用于广告；除非得到您的明确同意、出于安全原因或为遵守法律，任何人都不会查看这些数据。</p>
+
+  <h2>如何撤销授权和删除数据</h2>
+  <ul>
+    <li>在 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> 移除 Gmail 权限（名为“YappyVoz”的条目）。</li>
+    <li>卸载应用（Android）或程序（Windows）；卸载时会删除凭据、收款记录和本地日志。
+      您导出的 CSV 或 Excel 文件属于您，仍留在您保存的位置。</li>
+  </ul>
+
+  <div class="aviso">
+    YappyVoz 是独立开发的工具，<strong>与 Yappy 和 Banco General 没有关联</strong>，也未获得它们的认可。
+    Yappy 和 Banco General 是其各自所有者的商标。
+  </div>
+
+  <h2>联系方式</h2>
+  <p>关于本政策的任何问题，请联系：<a href="mailto:jimaisolutions@gmail.com">jimaisolutions@gmail.com</a>。</p>
+
+  <footer><a href="../../">YappyVoz</a> · 隐私政策 · <a href="../" lang="es">Español</a> · <a href="../en/" lang="en">English</a></footer>
+</main>
+</body>
+</html>

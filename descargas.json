@@ -1,0 +1,16 @@
+{
+  "android": {
+    "archivo": "YappyVoz-Android-0.1.0.apk",
+    "version": "0.1.0",
+    "bytes": 3409640,
+    "sha256": "5B09843D99343835AC7737DFD2D39F3F3C8510A74D9DBD94813CE0658567077F",
+    "url": "https://github.com/jimai929/yappyvoz-site/releases/download/v2026.11.16/YappyVoz-Android-0.1.0.apk"
+  },
+  "windows": {
+    "archivo": "YappyVoz-Setup-1.0.0.exe",
+    "version": "1.0.0",
+    "bytes": 30007819,
+    "sha256": "BF92498817E2DA6E5EBA2F6C9A300571570FCC769487AA8CE5D64FF7F9E9AECF",
+    "url": "https://github.com/jimai929/yappyvoz-site/releases/download/v2026.11.16/YappyVoz-Setup-1.0.0.exe"
+  }
+}
